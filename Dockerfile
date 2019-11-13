@@ -53,9 +53,9 @@ RUN echo "apt-get" && \
     mv /usr/src/jasperreports-server/jasperreports-server-*/* /usr/src/jasperreports-server && \
     #
     echo "unzip JasperReports Server WAR to Tomcat" && \
-	unzip -o -q /usr/src/jasperreports-server/jasperserver-pro.war \
-		-d $CATALINA_HOME/webapps/jasperserver-pro > /dev/null && \
-	rm -f /usr/src/jasperreports-server/jasperserver-pro.war && \
+	unzip -o -q /usr/src/jasperreports-server/jasperserver.war \
+		-d $CATALINA_HOME/webapps/jasperserver > /dev/null && \
+	rm -f /usr/src/jasperreports-server/jasperserver.war && \
     #
 	# java shouldn't be there - just to make sure
 	rm -rf /usr/src/jasperreports-server/java && \
